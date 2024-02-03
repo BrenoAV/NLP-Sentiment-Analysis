@@ -1710,6 +1710,30 @@ files = [
 ]
 
 [[package]]
+name = "keras-tuner"
+version = "1.4.6"
+description = "A Hyperparameter Tuning Library for Keras"
+optional = false
+python-versions = "*"
+files = [
+    {file = "keras-tuner-1.4.6.tar.gz", hash = "sha256:f5046eb924070c999f1642201bc2352da9153f41193b6feb1596fc8553a2c6d4"},
+    {file = "keras_tuner-1.4.6-py3-none-any.whl", hash = "sha256:d708fc8fda0ecc70c70c4bbe0efd4b53e46e22297c66b7e839f141d0df1cde2c"},
+]
+
+[package.dependencies]
+keras = "*"
+kt-legacy = "*"
+packaging = "*"
+requests = "*"
+
+[package.extras]
+bayesian = ["scikit-learn", "scipy"]
+build = ["build", "namex", "tensorflow-cpu"]
+tensorflow = ["tensorflow (>=2.0)"]
+tensorflow-cpu = ["tensorflow-cpu (>=2.0)"]
+tests = ["black", "flake8", "ipython", "isort", "namex", "pandas", "portpicker", "pytest", "pytest-cov", "pytest-xdist", "scikit-learn", "scipy"]
+
+[[package]]
 name = "kiwisolver"
 version = "1.4.5"
 description = "A fast implementation of the Cassowary constraint solver"
@@ -1820,6 +1844,17 @@ files = [
     {file = "kiwisolver-1.4.5-pp39-pypy39_pp73-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:210ef2c3a1f03272649aff1ef992df2e724748918c4bc2d5a90352849eb40bea"},
     {file = "kiwisolver-1.4.5-pp39-pypy39_pp73-win_amd64.whl", hash = "sha256:11d011a7574eb3b82bcc9c1a1d35c1d7075677fdd15de527d91b46bd35e935ee"},
     {file = "kiwisolver-1.4.5.tar.gz", hash = "sha256:e57e563a57fb22a142da34f38acc2fc1a5c864bc29ca1517a88abc963e60d6ec"},
+]
+
+[[package]]
+name = "kt-legacy"
+version = "1.0.5"
+description = "Legacy import names for Keras Tuner"
+optional = false
+python-versions = "*"
+files = [
+    {file = "kt-legacy-1.0.5.tar.gz", hash = "sha256:dbbade58f12c6a6da6062f4b045a6395a8d4195815e3e064bc3e609b69c8a26c"},
+    {file = "kt_legacy-1.0.5-py3-none-any.whl", hash = "sha256:8d5c5b3dccf348367fe9ca5b006e7ad2d1babcce62976cfc199e831ea699dcd3"},
 ]
 
 [[package]]
@@ -4364,4 +4399,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.10,<3.11"
-content-hash = "9271d08cd2936a94da91342a24f219353a2c5cbb0de380a17559d89032b3837e"
+content-hash = "df3162d6ad3e683834fb60f3742b0b246f546901bd78e3921f7991e63d560b82"
